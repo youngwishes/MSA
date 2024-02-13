@@ -7,12 +7,12 @@
 </h3>
 
 <p align="center">
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/19c422d7-806d-4fe4-9773-bd789c2f4e78" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/e27bcc09-b947-4b27-88b4-94c6922eecfb" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/a9d9c54f-124d-425e-8691-ef11bf131d46" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/c5adda28-6ae4-4bd3-ae9d-676104b74dae" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/a824c8aa-89cb-4d22-9706-c2a5affb98a0" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/fastapi-kafka/assets/92817776/325440cb-2f74-4fdc-a4e2-85bc55000727" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/19c422d7-806d-4fe4-9773-bd789c2f4e78" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/e27bcc09-b947-4b27-88b4-94c6922eecfb" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/a9d9c54f-124d-425e-8691-ef11bf131d46" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/c5adda28-6ae4-4bd3-ae9d-676104b74dae" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/a824c8aa-89cb-4d22-9706-c2a5affb98a0" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/325440cb-2f74-4fdc-a4e2-85bc55000727" width="50" height="50"/>
 </p>
 <p align="center">
    This project is an example of microservice architecture made on Python with Apache Kafka 💡
@@ -33,7 +33,7 @@ At the end **currency service** produce message to **notify service** that just 
 _Also i missed point about caching in redis, but the project not about caching. You can see by yourself with more details in repo :)_
 
 ## Diagram
-![image](https://github.com/youngwishes/fastapi-kafka/assets/92817776/e4c032f1-e7b8-4d47-9262-ca14c6ee4f05)
+![image](https://github.com/youngwishes/MSA/assets/92817776/8c0bbc2c-0a38-43be-8fa1-3486a00e7558)
 
 # Start locally
 
