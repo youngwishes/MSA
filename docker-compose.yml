@@ -1,0 +1,68 @@
+version: '3.3'
+
+services:
+  web:
+    restart: on-failure
+    build:
+      context: services/web/
+      dockerfile: Dockerfile
+    container_name: "web"
+    ports:
+      - "8000:8000"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: $KAFKA_BOOTSTRAP_SERVERS
+      WEB_TOPIC: $WEB_TOPIC
+    command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
+
+  currency:
+    restart: on-failure
+    build:
+      context: services/currency/
+      dockerfile: Dockerfile
+    container_name: "currency"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: $KAFKA_BOOTSTRAP_SERVERS
+      WEB_TOPIC: $WEB_TOPIC
+      CURRENCY_TOPIC: $CURRENCY_TOPIC
+      REDIS_HOST: $REDIS_HOST
+      REDIS_PORT: $REDIS_PORT
+    command: python main.py
+
+  bot:
+    restart: on-failure
+    build:
+      context: services/notify/
+      dockerfile: Dockerfile
+    container_name: "notify"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: $KAFKA_BOOTSTRAP_SERVERS
+      CURRENCY_TOPIC: $CURRENCY_TOPIC
+      BOT_TOKEN: $BOT_TOKEN
+    command: python main.py
+
+  zookeeper:
+    image: 'bitnami/zookeeper:3.7.0'
+    container_name: zookeeper
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+
+  kafka:
+    image: 'bitnami/kafka:2.8.0'
+    container_name: kafka
+    ports:
+      - "9093:9093"
+    environment:
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    depends_on:
+      - zookeeper
+
+  redis:
+    image: redis
+    container_name: redis
+    environment:
+      REDIS_HOST: REDIS_HOST
+    ports:
+      - "6379:6379"
