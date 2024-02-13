@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-     Technologies used:
+     Technologies that were used:
 </h3>
 
 <p align="center">
