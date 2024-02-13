@@ -8,11 +8,11 @@
 
 <p align="center">
    <img src="https://github.com/youngwishes/MSA/assets/92817776/0c233ba5-f0e4-44b8-b5ef-6608867e6d3b" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/MSA/assets/92817776/e27bcc09-b947-4b27-88b4-94c6922eecfb" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/MSA/assets/92817776/a9d9c54f-124d-425e-8691-ef11bf131d46" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/MSA/assets/92817776/c5adda28-6ae4-4bd3-ae9d-676104b74dae" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/MSA/assets/92817776/a824c8aa-89cb-4d22-9706-c2a5affb98a0" width="50" height="50"/>
-   <img src="https://github.com/youngwishes/MSA/assets/92817776/325440cb-2f74-4fdc-a4e2-85bc55000727" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/ecaae263-500a-4a80-b1ed-4296e830783c" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/3675cec5-2b17-408c-88b8-de1a7737aef2" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/cb33a288-5283-481d-8e6a-c94a2585623f" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/acc192cb-42af-476f-9eb9-b66fe10f9164" width="50" height="50"/>
+   <img src="https://github.com/youngwishes/MSA/assets/92817776/5192119a-a278-4e21-95ce-7548851ecb46" width="50" height="50"/>
 </p>
 <p align="center">
    This project is an example of microservice architecture made on Python with Apache Kafka 💡
